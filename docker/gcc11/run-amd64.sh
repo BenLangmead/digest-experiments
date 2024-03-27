@@ -14,7 +14,7 @@ fi
 
 docker run -it -v`pwd`/${NM}-${PLAT}:/code --platform linux/${PLAT} \
   ${NM}-${TOOL}-${PLAT} \
-  /bin/bash -c "cd /code && (meson setup --prefix=/code/install-root --buildtype=debug build && meson install -C build && meson install) 2>&1 | tee log-${PLAT}.txt"
+  /bin/bash -c "cd /code && (meson setup --prefix=/code/install-root --buildtype=debug build && meson install -C build) 2>&1 | tee log-${PLAT}.txt"
 
 LOGFN="${NM}-${PLAT}/log-${PLAT}.txt"
 test -f "${LOGFN}"
