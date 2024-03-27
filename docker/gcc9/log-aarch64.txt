@@ -1,0 +1,26 @@
+Cloning into 'ntHash'...
+Switched to a new branch 'patch-1'
+Branch 'patch-1' set up to track remote branch 'patch-1' from 'origin'.
+The Meson build system
+Version: 0.49.2
+Source dir: /code
+Build dir: /code/build
+Build type: native build
+Project name: digest
+Project version: 0.2.0
+Native C++ compiler: c++ (gcc 9.5.0 "c++ (GCC) 9.5.0")
+Build machine cpu family: aarch64
+Build machine cpu: aarch64
+
+|
+|Executing subproject ntHash 
+|
+|Project name: ntHash
+|Project version: 2.4.0
+|Native C++ compiler: c++ (gcc 9.5.0 "c++ (GCC) 9.5.0")
+|Program doxygen found: YES (/usr/bin/doxygen)
+|Message: Doxygen found
+
+subprojects/ntHash/meson.build:53:4: ERROR:  Unknown method "project_source_root" in object.
+
+A full log can be found at /code/build/meson-logs/meson-log.txt

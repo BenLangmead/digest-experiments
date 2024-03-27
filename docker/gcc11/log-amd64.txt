@@ -1,0 +1,495 @@
+Cloning into 'ntHash'...
+The Meson build system
+Version: 0.56.2
+Source dir: /code
+Build dir: /code/build
+Build type: native build
+Project name: digest
+Project version: 0.2.0
+C++ compiler for the host machine: c++ (gcc 11.4.0 "c++ (GCC) 11.4.0")
+C++ linker for the host machine: c++ ld.bfd 2.35.2
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+
+|Executing subproject ntHash method meson 
+|
+|Project name: ntHash
+|Project version: 2.4.0
+|C++ compiler for the host machine: c++ (gcc 11.4.0 "c++ (GCC) 11.4.0")
+|C++ linker for the host machine: c++ ld.bfd 2.35.2
+|Program doxygen found: YES (/usr/bin/doxygen)
+|Message: Doxygen found
+|Build targets in project: 4
+|Subproject ntHash finished.
+
+Library pthread found: YES
+Found pkg-config: /usr/bin/pkg-config (0.29.2)
+Found CMake: /usr/bin/cmake (3.18.4)
+Run-time dependency catch2-with-main found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency catch2-with-main
+Downloading catch2 source from https://github.com/catchorg/Catch2/archive/v3.4.0.tar.gz
+Download size: 1112790
+Downloading: ..........
+
+|Executing subproject catch2 method meson 
+|
+|Project name: catch2
+|Project version: 3.4.0
+|C++ compiler for the host machine: c++ (gcc 11.4.0 "c++ (GCC) 11.4.0")
+|C++ linker for the host machine: c++ ld.bfd 2.35.2
+|Configuring catch_user_config.hpp using configuration
+|Build targets in project: 8
+|Subproject catch2 finished.
+
+Dependency catch2-with-main from subproject subprojects/Catch2-3.4.0 found: YES 3.4.0
+Run-time dependency benchmark found: NO (tried pkgconfig and cmake)
+Looking for a fallback subproject for the dependency benchmark
+Downloading google-benchmark source from https://github.com/google/benchmark/archive/refs/tags/v1.7.1.tar.gz
+Download size: 196575
+Downloading: ..........
+Downloading google-benchmark patch from https://wrapdb.mesonbuild.com/v2/google-benchmark_1.7.1-2/get_patch
+Download size: 2287
+Downloading: ..........
+
+|Executing subproject google-benchmark method meson 
+|
+|Project name: benchmark
+|Project version: 1.7.1
+|C++ compiler for the host machine: c++ (gcc 11.4.0 "c++ (GCC) 11.4.0")
+|C++ linker for the host machine: c++ ld.bfd 2.35.2
+|Run-time dependency threads found: YES
+|Build targets in project: 22
+|Subproject google-benchmark finished.
+
+Dependency benchmark from subproject subprojects/benchmark-1.7.1 found: YES 1.7.1
+Program doxygen found: YES (/usr/bin/doxygen)
+Build targets in project: 28
+
+digest 0.2.0
+
+  Subprojects
+              catch2: YES
+    google-benchmark: YES
+              ntHash: YES
+
+Option optimization is: 0 [default: 3]
+Found ninja-1.10.1 at /usr/bin/ninja
+ninja: Entering directory `build'
+[1/227] Linking static target libdigest.a
+[2/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/generators_catch_generator_exception.cpp.o
+[3/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/benchmark_catch_chronometer.cpp.o
+[4/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/benchmark_detail_catch_benchmark_function.cpp.o
+[5/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_capture.cpp.o
+[6/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/benchmark_detail_catch_run_for_at_least.cpp.o
+[7/227] Compiling C++ object subprojects/ntHash/libnthash.a.p/src_kmer.cpp.o
+[8/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/generators_catch_generators.cpp.o
+[9/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/generators_catch_generators_random.cpp.o
+[10/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_config.cpp.o
+[11/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_exception.cpp.o
+[12/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_generatortracker.cpp.o
+[13/227] Compiling C++ object subprojects/ntHash/bench.p/examples_benchmark.cpp.o
+[14/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/benchmark_detail_catch_stats.cpp.o
+[15/227] Compiling C++ object subprojects/ntHash/libnthash.a.p/src_seed.cpp.o
+[16/227] Linking static target subprojects/ntHash/libnthash.a
+[17/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_context.cpp.o
+[18/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_testcase.cpp.o
+[19/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_registry_hub.cpp.o
+[20/227] Linking target subprojects/ntHash/bench
+[21/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_reporter_factory.cpp.o
+[22/227] Compiling C++ object subprojects/ntHash/nthash.p/tests_tests.cpp.o
+[23/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_case_insensitive_comparisons.cpp.o
+[24/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_assertion_handler.cpp.o
+[25/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_console_colour.cpp.o
+[26/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_errno_guard.cpp.o
+[27/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/interfaces_catch_interfaces_reporter.cpp.o
+[28/227] Linking target subprojects/ntHash/nthash
+[29/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_debug_console.cpp.o
+[30/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_debugger.cpp.o
+[31/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_decomposer.cpp.o
+[32/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_enforce.cpp.o
+[33/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_getenv.cpp.o
+[34/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_floating_point_helpers.cpp.o
+[35/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_enum_values_registry.cpp.o
+[36/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_clara.cpp.o
+[37/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_exception_translator_registry.cpp.o
+[38/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_leak_detector.cpp.o
+[39/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_message_info.cpp.o
+[40/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_polyfills.cpp.o
+[41/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_istream.cpp.o
+[42/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_fatal_condition_handler.cpp.o
+[43/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_random_number_generator.cpp.o
+[44/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_lazy_expr.cpp.o
+[45/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_result_type.cpp.o
+[46/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_output_redirect.cpp.o
+[47/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_commandline.cpp.o
+[48/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_parse_numbers.cpp.o
+[49/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_singletons.cpp.o
+[50/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_startup_exception_registry.cpp.o
+[51/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_list.cpp.o
+[52/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_source_line_info.cpp.o
+[53/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_random_seed_generation.cpp.o
+[54/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_reusable_string_stream.cpp.o
+[55/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_stdstreams.cpp.o
+[56/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_section.cpp.o
+[57/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_reporter_spec_parser.cpp.o
+[58/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_string_manip.cpp.o
+[59/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_case_info_hasher.cpp.o
+[60/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_tag_alias_registry.cpp.o
+[61/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_reporter_registry.cpp.o
+[62/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_run_context.cpp.o
+[63/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_uncaught_exceptions.cpp.o
+[64/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_failure_exception.cpp.o
+[65/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_stringref.cpp.o
+[66/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_spec_parser.cpp.o
+[67/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_registry.cpp.o
+[68/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_StringManip.tests.cpp.o
+[69/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_case_tracker.cpp.o
+[70/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_textflow.cpp.o
+[71/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_wildcard_pattern.cpp.o
+[72/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_xmlwriter.cpp.o
+[73/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/internal_catch_test_case_registry_impl.cpp.o
+[74/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers.cpp.o
+[75/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_exception.cpp.o
+[76/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_container_properties.cpp.o
+[77/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_predicate.cpp.o
+[78/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_floating_point.cpp.o
+[79/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_internal_catch_matchers_impl.cpp.o
+[80/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_quantifiers.cpp.o
+[81/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_templated.cpp.o
+[82/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_approx.cpp.o
+[83/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_assertion_result.cpp.o
+[84/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_get_random_seed.cpp.o
+[85/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_timer.cpp.o
+[86/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_totals.cpp.o
+[87/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_tag_alias_autoregistrar.cpp.o
+[88/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_message.cpp.o
+[89/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_registry_hub.cpp.o
+[90/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_config.cpp.o
+[91/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_translate_exception.cpp.o
+[92/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_test_case_info.cpp.o
+[93/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_version.cpp.o
+[94/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_test_spec.cpp.o
+[95/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_tostring.cpp.o
+[96/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/matchers_catch_matchers_string.cpp.o
+[97/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_automake.cpp.o
+[98/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_common_base.cpp.o
+[99/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_event_listener.cpp.o
+[100/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_compact.cpp.o
+[101/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_registrars.cpp.o
+[102/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_cumulative_base.cpp.o
+[103/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_console.cpp.o
+[104/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/catch_session.cpp.o
+[105/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_multi.cpp.o
+[106/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_helpers.cpp.o
+[107/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_streaming_base.cpp.o
+[108/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_junit.cpp.o
+[109/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_sonarqube.cpp.o
+[110/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2Main.a.p/internal_catch_main.cpp.o
+[111/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_teamcity.cpp.o
+[112/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_tap.cpp.o
+[113/227] Linking static target subprojects/Catch2-3.4.0/src/catch2/libCatch2Main.a
+[114/227] Compiling C++ object subprojects/Catch2-3.4.0/src/catch2/libCatch2.a.p/reporters_catch_reporter_xml.cpp.o
+[115/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Algorithms.tests.cpp.o
+[116/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_CmdLineHelpers.tests.cpp.o
+[117/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_helpers_parse_test_spec.cpp.o
+[118/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_RandomNumberGeneration.tests.cpp.o
+[119/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Clara.tests.cpp.o
+[120/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_ColourImpl.tests.cpp.o
+[121/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Reporters.tests.cpp.o
+[122/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Details.tests.cpp.o
+[123/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_FloatingPoint.tests.cpp.o
+[124/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Parse.tests.cpp.o
+[125/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Stream.tests.cpp.o
+[126/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_PartTracker.tests.cpp.o
+[127/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_String.tests.cpp.o
+[128/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_CmdLine.tests.cpp.o
+[129/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_TestCaseInfoHasher.tests.cpp.o
+[130/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_GeneratorsImpl.tests.cpp.o
+[131/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Tag.tests.cpp.o
+[132/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_InternalBenchmark.tests.cpp.o
+[133/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Sharding.tests.cpp.o
+[134/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_TestSpecParser.tests.cpp.o
+[135/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_TestSpec.tests.cpp.o
+[136/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_TextFlow.tests.cpp.o
+[137/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Traits.tests.cpp.o
+[138/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_ToString.tests.cpp.o
+[139/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_UniquePtr.tests.cpp.o
+[140/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_TestRegistrations.cpp.o
+[141/227] Linking static target subprojects/Catch2-3.4.0/src/catch2/libCatch2.a
+[142/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_TimingTests_Sleep.tests.cpp.o
+[143/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_IntrospectiveTests_Xml.tests.cpp.o
+[144/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_BDD.tests.cpp.o
+[145/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Approx.tests.cpp.o
+[146/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Decomposition.tests.cpp.o
+[147/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Compilation.tests.cpp.o
+[148/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_EnumToString.tests.cpp.o
+[149/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Condition.tests.cpp.o
+[150/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Class.tests.cpp.o
+[151/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Exception.tests.cpp.o
+[152/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Benchmark.tests.cpp.o
+[153/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringByte.tests.cpp.o
+[154/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Message.tests.cpp.o
+[155/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringChrono.tests.cpp.o
+[156/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringOptional.tests.cpp.o
+[157/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringPair.tests.cpp.o
+[158/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringGeneral.tests.cpp.o
+[159/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringTuple.tests.cpp.o
+[160/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Generators.tests.cpp.o
+[161/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Misc.tests.cpp.o
+[162/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringWhich.tests.cpp.o
+[163/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringVector.tests.cpp.o
+[164/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark_main.cc.o
+[165/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_ToStringVariant.tests.cpp.o
+[166/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_VariadicMacros.tests.cpp.o
+[167/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Tricky.tests.cpp.o
+[168/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_Matchers.tests.cpp.o
+[169/227] Compiling C++ object subprojects/Catch2-3.4.0/tests/SelfTest.p/SelfTest_UsageTests_MatchersRanges.tests.cpp.o
+[170/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark_name.cc.o
+[171/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark_api_internal.cc.o
+[172/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_colorprint.cc.o
+[173/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_commandlineflags.cc.o
+[174/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_counter.cc.o
+[175/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_complexity.cc.o
+[176/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark.cc.o
+[177/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark_register.cc.o
+[178/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_benchmark_runner.cc.o
+[179/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_console_reporter.cc.o
+[180/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_sleep.cc.o
+[181/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_csv_reporter.cc.o
+[182/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_perf_counters.cc.o
+[183/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_json_reporter.cc.o
+[184/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_reporter.cc.o
+[185/227] Compiling C++ object subprojects/benchmark-1.7.1/libbenchmark-main.so.p/src_benchmark_main.cc.o
+[186/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_timers.cc.o
+[187/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_string_util.cc.o
+[188/227] Compiling C++ object tests.p/tests_test_test.cpp.o
+[189/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_statistics.cc.o
+[190/227] Compiling C++ object subprojects/benchmark-1.7.1/test/spec_arg_test.p/spec_arg_test.cc.o
+[191/227] Compiling C++ object subprojects/benchmark-1.7.1/test/benchmark_test.p/benchmark_test.cc.o
+[192/227] Compiling C++ object subprojects/benchmark-1.7.1/libgbenchmark.so.p/src_sysinfo.cc.o
+[193/227] Compiling C++ object subprojects/benchmark-1.7.1/test/spec_arg_verbosity_test.p/spec_arg_verbosity_test.cc.o
+[194/227] Compiling C++ object subprojects/benchmark-1.7.1/test/benchmark_setup_teardown_test.p/benchmark_setup_teardown_test.cc.o
+[195/227] Compiling C++ object subprojects/benchmark-1.7.1/test/basic_test.p/basic_test.cc.o
+[196/227] Compiling C++ object subprojects/benchmark-1.7.1/test/options_test.p/options_test.cc.o
+[197/227] Compiling C++ object subprojects/benchmark-1.7.1/test/donotoptimize_test.p/donotoptimize_test.cc.o
+[198/227] Compiling C++ object subprojects/benchmark-1.7.1/test/fixture_test.p/fixture_test.cc.o
+[199/227] Compiling C++ object subprojects/benchmark-1.7.1/test/map_test.p/map_test.cc.o
+[200/227] Compiling C++ object subprojects/benchmark-1.7.1/test/multiple_ranges_test.p/multiple_ranges_test.cc.o
+[201/227] Linking target subprojects/benchmark-1.7.1/libgbenchmark.so
+[202/227] Compiling C++ object subprojects/benchmark-1.7.1/test/args_product_test.p/args_product_test.cc.o
+[203/227] Generating symbol file subprojects/benchmark-1.7.1/libgbenchmark.so.p/libgbenchmark.so.symbols
+[204/227] Linking target subprojects/benchmark-1.7.1/libbenchmark-main.so
+[205/227] Linking target subprojects/benchmark-1.7.1/test/spec_arg_verbosity_test
+[206/227] Linking target subprojects/benchmark-1.7.1/test/benchmark_setup_teardown_test
+[207/227] Linking target subprojects/benchmark-1.7.1/test/spec_arg_test
+[208/227] Linking target subprojects/benchmark-1.7.1/test/basic_test
+[209/227] Linking target subprojects/benchmark-1.7.1/test/donotoptimize_test
+[210/227] Linking target subprojects/benchmark-1.7.1/test/benchmark_test
+[211/227] Linking target subprojects/benchmark-1.7.1/test/options_test
+[212/227] Linking target subprojects/benchmark-1.7.1/test/fixture_test
+[213/227] Linking target subprojects/benchmark-1.7.1/test/map_test
+[214/227] Linking target subprojects/benchmark-1.7.1/test/multiple_ranges_test
+[215/227] Linking target subprojects/benchmark-1.7.1/test/args_product_test
+[216/227] Compiling C++ object expected_non-ACTG.p/tests_density_non-ACTG.cpp.o
+[217/227] Linking target expected_non-ACTG
+[218/227] Compiling C++ object expected_ACTG.p/tests_density_ACTG.cpp.o
+[219/227] Compiling C++ object bench.p/tests_bench_benchmark.cpp.o
+[220/227] Linking target expected_ACTG
+[221/227] Compiling C++ object bench_ds.p/tests_data_structure_bench_ds.cpp.o
+[222/227] Linking target tests
+[223/227] Compiling C++ object test_thread.p/tests_test_test_thread.cpp.o
+[224/227] Linking target bench
+[225/227] Linking target bench_ds
+[226/227] Linking target subprojects/Catch2-3.4.0/tests/SelfTest
+[227/227] Linking target test_thread
+Installing subprojects/ntHash/libnthash.a to /code/install-root/lib
+Installing subprojects/ntHash/nthash to /code/install-root/bin
+Installing libdigest.a to /code/install-root/lib
+Installing subprojects/Catch2-3.4.0/src/catch2/libCatch2.a to /code/install-root/lib/x86_64-linux-gnu
+Installing subprojects/Catch2-3.4.0/src/catch2/libCatch2Main.a to /code/install-root/lib/x86_64-linux-gnu
+Installing /code/subprojects/ntHash/include/nthash/nthash.hpp to /code/install-root/include/nthash
+Installing /code/include/digest/digester.hpp to /code/install-root/include/digest
+Installing /code/include/digest/mod_minimizer.hpp to /code/install-root/include/digest
+Installing /code/include/digest/syncmer.hpp to /code/install-root/include/digest
+Installing /code/include/digest/window_minimizer.hpp to /code/install-root/include/digest
+Installing /code/include/digest/data_structure.hpp to /code/install-root/include/digest
+Installing /code/include/digest/syncmer.tpp to /code/install-root/include/digest
+Installing /code/include/digest/window_minimizer.tpp to /code/install-root/include/digest
+Installing /code/include/digest/mod_minimizer.tpp to /code/install-root/include/digest
+Installing /code/include/digest/digester.tpp to /code/install-root/include/digest
+Installing /code/include/digest/thread_out.hpp to /code/install-root/include/digest
+Installing /code/include/digest/thread_out.tpp to /code/install-root/include/digest
+Installing /code/include/nthash/kmer.hpp to /code/install-root/include/nthash
+Installing /code/include/nthash/internal.hpp to /code/install-root/include/nthash
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_benchmark.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_benchmark_all.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_chronometer.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_clock.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_constructor.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_environment.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_estimate.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_execution_plan.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_optimizer.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_outlier_classification.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/catch_sample_analysis.hpp to /code/install-root/include/catch2/benchmark
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_analyse.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_benchmark_function.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_benchmark_stats.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_complete_invoke.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_estimate_clock.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_measure.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_repeat.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_run_for_at_least.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_stats.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/benchmark/detail/catch_timing.hpp to /code/install-root/include/catch2/benchmark/detail
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generator_exception.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generators.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generators_adapters.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generators_all.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generators_random.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/generators/catch_generators_range.hpp to /code/install-root/include/catch2/generators
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_all.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_capture.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_config.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_exception.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_generatortracker.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_registry_hub.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_reporter.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_reporter_factory.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_tag_alias_registry.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_test_invoker.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/interfaces/catch_interfaces_testcase.hpp to /code/install-root/include/catch2/interfaces
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_assertion_handler.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_case_insensitive_comparisons.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_case_sensitive.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_clara.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_commandline.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_compare_traits.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_compiler_capabilities.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_config_android_logwrite.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_config_counter.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_config_static_analysis_support.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_config_uncaught_exceptions.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_config_wchar.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_console_colour.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_console_width.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_container_nonmembers.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_context.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_debug_console.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_debugger.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_decomposer.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_enforce.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_enum_values_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_errno_guard.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_exception_translator_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_fatal_condition_handler.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_floating_point_helpers.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_getenv.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_istream.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_is_permutation.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_lazy_expr.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_leak_detector.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_list.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_logical_traits.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_message_info.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_meta.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_move_and_forward.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_noncopyable.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_optional.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_output_redirect.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_parse_numbers.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_platform.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_polyfills.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_preprocessor.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_preprocessor_internal_stringify.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_preprocessor_remove_parens.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_random_number_generator.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_random_seed_generation.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_reporter_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_reporter_spec_parser.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_result_type.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_reusable_string_stream.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_run_context.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_section.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_sharding.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_singletons.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_source_line_info.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_startup_exception_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_stdstreams.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_stream_end_stop.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_string_manip.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_stringref.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_tag_alias_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_template_test_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_case_info_hasher.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_case_registry_impl.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_case_tracker.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_failure_exception.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_macro_impl.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_registry.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_run_info.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_test_spec_parser.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_textflow.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_to_string.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_uncaught_exceptions.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_unique_name.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_unique_ptr.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_void_type.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_wildcard_pattern.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_windows_h_proxy.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/internal/catch_xmlwriter.hpp to /code/install-root/include/catch2/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_all.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_container_properties.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_contains.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_exception.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_floating_point.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_predicate.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_quantifiers.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_string.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_templated.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/catch_matchers_vector.hpp to /code/install-root/include/catch2/matchers
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/matchers/internal/catch_matchers_impl.hpp to /code/install-root/include/catch2/matchers/internal
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_all.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_approx.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_assertion_info.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_assertion_result.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_config.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_get_random_seed.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_message.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_section_info.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_session.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_tag_alias.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_tag_alias_autoregistrar.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_template_test_macros.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_test_case_info.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_test_macros.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_test_spec.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_timer.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_tostring.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_totals.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_translate_exception.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_version.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/catch_version_macros.hpp to /code/install-root/include/catch2/
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_automake.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_common_base.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_compact.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_console.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_cumulative_base.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_event_listener.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_helpers.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_junit.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_multi.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_registrars.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_sonarqube.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_streaming_base.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_tap.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_teamcity.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporter_xml.hpp to /code/install-root/include/catch2/reporters
+Installing /code/subprojects/Catch2-3.4.0/src/catch2/reporters/catch_reporters_all.hpp to /code/install-root/include/catch2/reporters
+Installing /code/build/subprojects/Catch2-3.4.0/src/catch2/catch_user_config.hpp to /code/install-root/include/catch2
+Installing /code/build/meson-private/catch2.pc to /code/install-root/lib/x86_64-linux-gnu/pkgconfig
+Installing /code/build/meson-private/catch2-with-main.pc to /code/install-root/lib/x86_64-linux-gnu/pkgconfig
+Install data not found. Run this command in build directory root.
